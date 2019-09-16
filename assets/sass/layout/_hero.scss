@@ -1,0 +1,31 @@
+.hero{
+  background-image: url("../images/bg-hero.svg");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  height: 100%;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.hero__title {
+  grid-column: 2 / 12;
+}
+.hero__title h1 {
+  padding-top: 50px;
+}
+
+.hero__title p {
+  line-height: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-size: cover;
+    background-position: center;
+  }
+  .hero__title {
+    grid-column: 2 / 6;
+  }
+}

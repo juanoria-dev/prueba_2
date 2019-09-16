@@ -1,0 +1,45 @@
+.caracteristicas {
+  grid-column: 1 / -1;
+}
+
+.caracteristicas__title h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.caracteristicas__contenido {
+   display: grid;
+   grid-template-columns: repeat(12,1fr);
+ }
+
+.caracteriasticas__contenido__grafic {
+  grid-column: 2/12;
+  animation-name: barras;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+
+.caracteriasticas__contenido__grafic img {
+  width: 100%;
+}
+
+.caracteriasticas__contenido__text {
+  grid-column: 2/12;
+  & p {
+   line-height: 35px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .caracteriasticas__contenido__grafic {
+    grid-column: 3/7;
+   }
+   .caracteriasticas__contenido__text {
+     grid-column: 7/11;
+   }
+   .caracteristicas__contenido {
+      grid-gap: 50px;
+    }
+}

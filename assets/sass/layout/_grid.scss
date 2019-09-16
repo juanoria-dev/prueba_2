@@ -1,0 +1,19 @@
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 93px 500px 600px 1180px 100px;
+    // grid-template-rows: 0.12fr 0.98fr 0.42fr 1fr 0.14fr;
+}
+
+@media only screen and (min-width: 768px) {
+  .grilla {
+    grid-template-rows: 93px 800px 350px 915px 100px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .grilla {
+    grid-template-rows: 93px 800px 350px 1000px 100px;
+  }
+}

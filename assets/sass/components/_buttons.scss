@@ -1,0 +1,80 @@
+.button {
+  background-color: $ball_Blue;
+  color: $White;
+  font-family: $raleway;
+  font-weight: $bold;
+  font-size: $x-small;
+  padding: 5px 13px;
+  cursor: pointer;
+  border-style: none;
+  margin-left: 13px;
+  &:hover {
+    background-color: $Blue_Lagoon;
+  }
+  &:focus {
+    background-color: $Silver_Chalice;
+  }
+}
+
+.button2 {
+  background-color: $White;
+  color: $Onyx;
+  font-family: $raleway;
+  font-weight: $regular;
+  font-size: $x-small;
+  padding: 5px 13px;
+  cursor: pointer;
+  border-style: none;
+  margin-left: 13px;
+  &:hover {
+    background-color: $Blue_Lagoon;
+  }
+  &:focus {
+    background-color: $Silver_Chalice;
+  }
+}
+
+.button3 {
+  background-color: $ball_Blue;
+  color: $White;
+  font-family: $raleway;
+  font-weight: $bold;
+  font-size: $x-small;
+  cursor: pointer;
+  border-style: none;
+
+  &:hover {
+    background-color: $Blue_Lagoon;
+  }
+  &:focus {
+    background-color: $Silver_Chalice;
+  }
+  &-sm {
+      padding: 8px 80px;
+  }
+  &-lg {
+      padding: 8px 95px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .button3 {
+    &-sm {
+        padding: 8px 76px;
+    }
+    &-lg {
+        padding: 8px 89px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .button3 {
+    &-sm {
+        padding: 8px 93px;
+    }
+    &-lg {
+        padding: 8px 106px;
+    }
+  }
+}
